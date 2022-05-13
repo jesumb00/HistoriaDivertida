@@ -1,0 +1,62 @@
+html{
+    background-color: #f1f3f6;
+}
+header{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 2px -3px gray;
+}
+#section-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 70vw;
+}
+a{
+    text-decoration: none;
+    color:#5b5b62;
+}
+
+.menu{
+    padding: 0;
+    margin-left:3% ;
+    border-top:solid;
+    border-bottom:solid;
+    color:#5b5b62;
+}
+#user{
+    text-decoration: none;
+    color: #5b5b62;
+}
+#photo_user{
+    height: 7vh;
+    width: 7vh;
+    margin-right:1vw ;
+    margin-left:8vw ;
+}
+.menu:hover{
+    margin-left:3% ;
+    border-top:solid;
+    border-bottom:solid;
+    font-size:1.1em;
+    color:black;
+}
+@media (max-width: 800px) {
+    #section-menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        width: 50vw;
+    }
+}
+

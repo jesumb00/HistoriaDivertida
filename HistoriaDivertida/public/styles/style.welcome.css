@@ -1,0 +1,670 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/*font-family: 'Macondo', cursive;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    box-shadow: 700px 700px 400px #000;
+}
+header section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black ;
+    height: 6vh;
+    font-size: 12px;
+}
+
+
+
+header section article h1{
+    margin-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+
+}
+.img-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif ;
+
+
+}
+.img-section h1 {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 900;
+    background-color: rgba(41, 40, 40, 0.123);
+    border-radius: 2em;
+}
+
+.img-section  a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top:2vh ;
+    padding: 0.5em;
+    background-color: rgba(119, 151, 179, 0.651);
+    border-radius: 2em;
+    box-shadow: 300px 300px 500px #000;
+    font-family: 'Macondo', cursive;
+}
+.img-section  a:hover{
+
+    font-size: larger;
+
+    box-shadow: 4px 4px 400px #000;
+}
+#expo1{
+    background-image: url('../img/welcome/grecia1.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+}
+#expo2{
+    background-image: url('../img/welcome/egipto1.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 103vh;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+}
+
+#expo3{
+    background-image: url('../img/welcome/grecia2.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 105vh;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+}
+#expo4{
+    background-image: url('../img/welcome/egipto2.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+}
+#icon-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+#icon-section article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 6vw;
+    border-left: 1px solid rgb(0, 0, 0) ;
+}
+#icon-section article i{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+}
+footer p{
+    font-size: small;
+}
+iframe{
+    width:98.2vw ;
+    height:450px;
+    border:0;
+}
+#social{
+    display: flex;
+    justify-content: space-between;
+    margin:1em;
+}
+#social article{
+    display: flex;
+}
+#social article a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 10vw;
+    font-size: large;
+}
+#social article a i{
+    padding-right: 1vw;
+}
+
+
+.img-section img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.full-menu{
+    position: fixed;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+}
+
+.full-menu .wrap{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-menu .wrap .navigation{
+    flex-basis:0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 23vw;
+
+}
+.full-menu .wrap .navigation ul{
+    list-style: none;
+}
+.full-menu .wrap .navigation ul li{
+    margin: 20px 20px;
+}
+.full-menu .wrap .navigation ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color:#fff;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+}
+
+.full-menu .wrap .navigation ul li a:hover,
+.full-menu .wrap .navigation .social-items a:hover{
+    color: #fff;
+}
+
+.full-menu .wrap .navigation .social-items a{
+    text-decoration: none;
+    color:rgb(120, 141, 153);
+    font-size: 30px;
+    margin: 50px 20px 0px 15px ;
+}
+
+.full-menu .wrap .menu-text {
+    flex-basis:0;
+    flex-grow: 1;
+
+    font-size: 15px;
+    color:aliceblue;
+    font-weight: 300;
+    text-align: left;
+}
+.full-menu .wrap .menu-text{
+    height: 100vh;
+}
+
+.full-menu .wrap .menu-text article{
+    margin-top: 7vh;
+    margin-right: 14vw;
+    font-size: 32px;
+    text-align: right;
+}
+.full-menu .wrap .menu-text i{
+    font-size: 32px;
+}
+.full-menu .wrap .menu-text p{
+    margin-top: 34vh;
+    margin-right: 7vw;
+		font-size: 13px;
+		font-weight: 300;
+
+}
+
+
+
+/* RESPONSIVE*/
+@media screen and (max-width: 1640px){
+    #expo1{
+
+        height: 92vh;
+    }
+    #expo2{
+
+        height: 94vh;
+    }
+    #expo3{
+
+        height: 96vh;
+    }
+    #expo4{
+
+        height: 92vh;
+    }
+}
+@media screen and (max-width: 1500px){
+    #expo1{
+
+        height: 89vh;
+    }
+    #expo2{
+
+        height: 91vh;
+    }
+    #expo3{
+
+        height: 93vh;
+    }
+    #expo4{
+
+        height: 89vh;
+    }
+}
+@media screen and (max-width: 1350px){
+    #expo1{
+
+        height: 83vh;
+    }
+    #expo2{
+
+        height: 85vh;
+    }
+    #expo3{
+
+        height: 87vh;
+    }
+    #expo4{
+
+        height: 83vh;
+    }
+}
+@media screen and (max-width: 1220px){
+    #expo1{
+
+        height: 74vh;
+    }
+    #expo2{
+
+        height: 76vh;
+    }
+    #expo3{
+
+        height: 78vh;
+    }
+    #expo4{
+
+        height: 74vh;
+    }
+}
+@media screen and (max-width: 1120px){
+    #expo1{
+
+        height: 69vh;
+    }
+    #expo2{
+
+        height: 71vh;
+    }
+    #expo3{
+
+        height: 73vh;
+    }
+    #expo4{
+
+        height: 69vh;
+    }
+}
+@media screen and (max-width: 1000px){
+    #expo1{
+
+        height: 62vh;
+    }
+    #expo2{
+
+        height: 64vh;
+    }
+    #expo3{
+
+        height: 66vh;
+    }
+    #expo4{
+
+        height: 62vh;
+    }
+}
+@media screen and (max-width: 920px){
+    #expo1{
+
+        height: 57vh;
+    }
+    #expo2{
+
+        height: 59vh;
+    }
+    #expo3{
+
+        height: 61vh;
+    }
+    #expo4{
+
+        height: 57vh;
+    }
+}
+@media screen and (max-width: 850px){
+    #expo1{
+
+        height: 52vh;
+    }
+    #expo2{
+
+        height: 54vh;
+    }
+    #expo3{
+
+        height: 56vh;
+    }
+    #expo4{
+
+        height: 52vh;
+    }
+}
+@media screen and (max-width: 750px){
+	.main{
+		height: 680px;
+	}
+    .img-section img{
+        height: 100%;
+    }
+	.caption-main h1{
+		font-size: 60px;
+	}
+
+    iframe{
+        width:96.2vw ;
+    }
+	/*Full menu*/
+	.full-menu .wrap .navigation ul li a{
+		font-size: 24px;
+	}
+
+	.full-menu .wrap .menu-text p{
+		font-size: 13px;
+		font-weight: 300;
+	}
+    .full-menu .wrap .menu-text{
+        height: 100%;
+    }
+
+    .full-menu .wrap .menu-text article{
+        margin-top: 7vh;
+        margin-right: 7vw;
+        font-size: 24px;
+    }
+    .full-menu .wrap .menu-text p{
+        margin-top: 34vh;
+        margin-right: 7vw;
+        text-align: center;
+    }
+    #social article a{
+
+        font-size: small;
+    }
+    .social-items a i{
+        font-size: 20px;
+    }
+
+    #expo1{
+
+        height: 50vh;
+    }
+    #expo2{
+
+        height: 52vh;
+    }
+    #expo3{
+
+        height: 54vh;
+    }
+    #expo4{
+
+        height: 50vh;
+    }
+
+}
+@media screen and (max-width: 680px){
+    #expo1{
+
+        height: 48vh;
+    }
+    #expo2{
+
+        height: 49vh;
+    }
+    #expo3{
+
+        height: 51vh;
+    }
+    #expo4{
+
+        height: 47vh;
+    }
+}
+@media screen and (max-width: 630px){
+    #expo1{
+
+        height: 45vh;
+    }
+    #expo2{
+
+        height: 46vh;
+    }
+    #expo3{
+
+        height: 49vh;
+    }
+    #expo4{
+
+        height: 44vh;
+    }
+}
+@media screen and (max-width: 590px){
+    #expo1{
+
+        height: 41vh;
+    }
+    #expo2{
+
+        height: 43vh;
+    }
+    #expo3{
+
+        height: 45vh;
+    }
+    #expo4{
+
+        height: 41vh;
+    }
+}
+@media screen and (max-width: 520px){
+	.full-menu .menu-text p{
+		display: none;
+	}
+    .img-section img{
+        height: 100%;
+    }
+	.full-menu .navegacion{
+		justify-content: center;
+		text-align: center;
+	}
+    iframe{
+        width:93.2vw ;
+    }
+    #social article a{
+
+        font-size: small;
+    }
+    #expo1{
+
+        height: 37vh;
+    }
+    #expo2{
+
+        height: 39vh;
+    }
+    #expo3{
+
+        height: 41vh;
+    }
+    #expo4{
+
+        height: 37vh;
+    }
+
+}
+@media screen and (max-width: 470px){
+    #expo1{
+
+        height: 34vh;
+    }
+    #expo2{
+
+        height: 36vh;
+    }
+    #expo3{
+
+        height: 38vh;
+    }
+    #expo4{
+
+        height: 34vh;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+	.main{
+		height: 600px;
+	}
+    .img-section img{
+        height: 100%;
+    }
+	.caption-main h1{
+		font-size: 50px;
+	}
+
+	.caption-main .btn-view{
+		width: 180px;
+		padding: 10px 0px;
+		margin: 20px auto;
+
+		font-size: 18px;
+	}
+    iframe{
+        width:90.2vw ;
+    }
+    #expo1{
+
+        height: 30vh;
+    }
+    #expo2{
+
+        height: 32vh;
+    }
+    #expo3{
+
+        height: 34vh;
+    }
+    #expo4{
+
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+	.main{
+		height: 50px;
+	}
+
+	.caption-main h1{
+		font-size: 20px;
+	}
+
+
+    .full-menu .wrap .menu-text article{
+        margin-top: 7vh;
+        font-size: 32px;
+    }
+    .full-menu .wrap .menu-text i{
+        font-size: 32px;
+    }
+    .full-menu .wrap .menu-text p{
+        margin-top: 38vh;
+    }
+    footer{
+        width:100% ;
+    }
+    #social article a{
+
+        font-size: x-small;
+    }
+
+    #expo1{
+
+        height: 25vh;
+    }
+    #expo2{
+
+        height: 27vh;
+    }
+    #expo3{
+
+        height: 29vh;
+    }
+    #expo4{
+
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 300px){
+
+    #expo1{
+
+        height: 20vh;
+    }
+    #expo2{
+
+        height: 22vh;
+    }
+    #expo3{
+
+        height: 24vh;
+    }
+    #expo4{
+
+        height: 20vh;
+    }
+}

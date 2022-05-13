@@ -1,0 +1,115 @@
+main{
+    padding-top: 3.6em;
+
+}
+#presentation{
+    background: url('../img/shop.home/grecia.jpg') no-repeat fixed ;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100vw 50vw;
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#function-descripcion{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.function-description{
+    margin:0;
+    padding: 0;
+}
+#website-description{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.title{
+    font-size: 2.7em;
+}
+.previous{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+iframe{
+    width: 98vw;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.social-media{
+    height: 3vh;
+    width: 3vh;
+}
+@media (min-width: 800px) {
+    iframe{
+        width: 48vw;
+        height: 45vh;
+    }
+}
+#visual-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 40vh;
+}
+#visual-nav article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 100%;
+    margin: 0.7em;
+}
+#visual-nav article span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf6f6;
+    width: 10vw;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+}
+#visual-nav article span a{
+    color:cornflowerblue;
+}
+#visual-nav article span :hover{
+    background-color:cornflowerblue;
+}
+#visual-nav article span a:hover{
+    color:#faf6f6;
+}
+
+#art{
+    background: url('../img/shop.home/art.jpg') center center no-repeat ;
+    background-size: 55vw 30vw;
+}
+#media{
+    background: url('../img/shop.home/media.webp') center center no-repeat ;
+    background-size: 30vw 30vw;
+}
+#stationery{
+    background: url('../img/shop.home/stationery.jpg') center center no-repeat ;
+    background-size: 30vw 30vw;
+}
+#orders{
+    background: url('../img/shop.home/orders.jpg') center center no-repeat ;
+    background-size: 30vw 30vw;
+}

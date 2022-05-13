@@ -1,0 +1,410 @@
+h3 h2 p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start:0px;
+    margin-inline-end:0px;
+}
+header section h1{
+    margin-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+
+}
+
+main{
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black ;
+    height: 6vh;
+
+}
+
+header section {
+    font-size: 12px;
+}
+
+#menu-front article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 9vw;
+
+}
+#menu-front article a{
+    color:black;
+    font-size: medium;
+}
+#menu-front article a:hover{
+    color:black;
+    border-bottom: solid;
+}
+#menu-front{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+#icon-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    visibility: hidden;
+
+}
+#icon-section article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 6vw;
+    border-left: 1px solid black ;
+}
+
+
+.carousel .carousel-item img{
+    height: 60vh;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: -10vw;
+    z-index:-1;
+    border-radius: 2em;
+
+}
+.carousel .indicators .indicator-item {
+    border-radius:0;
+    transform: rotate(45deg);
+    margin:15px;
+    background:#36221c;
+}
+.carousel .indicators .indicator-item {
+    border-radius:0;
+    transform: rotate(45deg);
+    margin:15px;
+    background:#36221c;
+}
+
+#details{
+    width: 37%;
+    flex-direction: column;
+    margin-right: 13%;
+}
+
+#num{
+    width: 4vw;
+    text-align: center
+}
+
+#add-product{
+    margin-right: 2vw;
+    margin-left: 6vw;
+    border-radius: 2em;
+    background-color: rgb(175, 196, 216);
+    width: 20vw;
+}
+#details article i{
+    font-size: xx-large;
+    margin-left: 2vw;
+
+}
+#like{
+    color:rgb(168, 2, 2);
+}
+
+#features{
+    margin-top: 10vh;
+    width: 100%;
+    justify-content: center;
+}
+#features details{
+
+    width: 90%;
+
+}
+table{
+    margin-bottom:3em;
+    width: 80%;
+}
+tr{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+}
+footer p{
+    font-size: small;
+}
+iframe{
+    width:100vw ;
+    height:450px;
+    border:0;
+}
+#social{
+    display: flex;
+    justify-content: space-between;
+    margin:1em;
+}
+#social article{
+    display: flex;
+}
+#social article a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 10vw;
+    font-size: large;
+}
+#social article a i{
+    padding-right: 1vw;
+}
+nav{
+    background-color: #292929;
+    border:none;
+    box-shadow: none;
+}
+.full-menu{
+    position: fixed;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+}
+
+.full-menu .wrap{
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.full-menu .wrap .navigation{
+    flex-basis:0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 23vw;
+
+}
+.full-menu .wrap .navigation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.full-menu .wrap .navigation ul li{
+    margin: 20px 20px;
+}
+.full-menu .wrap .navigation ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color:#fff;
+}
+
+.full-menu .wrap .navigation ul li a:hover,
+.full-menu .wrap .navigation .social-items a:hover{
+    color: #fff;
+}
+
+.full-menu .wrap .navigation .social-items a{
+    text-decoration: none;
+    color:rgb(120, 141, 153);
+    font-size: 30px;
+    margin: 50px 20px 0px 15px ;
+}
+
+.full-menu .wrap .menu-text {
+    flex-basis:0;
+    flex-grow: 1;
+
+    font-size: 15px;
+    color:aliceblue;
+    font-weight: 300;
+    text-align: left;
+}
+.full-menu .wrap .menu-text{
+    height: 100vh;
+}
+
+.full-menu .wrap .menu-text article{
+    margin-top: 7vh;
+    margin-right: 14vw;
+    font-size: 32px;
+    text-align: right;
+}
+.full-menu .wrap .menu-text i{
+    font-size: 32px;
+}
+.full-menu .wrap .menu-text p{
+    margin-top: 34vh;
+    margin-right: 7vw;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+
+
+/* RESPONSIVE*/
+@media screen and (max-width: 950px){
+    #icon-section{
+        visibility: visible;
+    }
+    #menu-front{
+        visibility: hidden;
+        font-size: 1px;
+        width: 1vw;
+    }
+}
+@media screen and (max-width: 750px){
+    .main{
+        height: 680px;
+    }
+    .img-section img{
+        height: 100%;
+    }
+    .caption-main h1{
+        font-size: 60px;
+    }
+
+    iframe{
+        width:96.2vw ;
+    }
+    /*Full menu*/
+    .full-menu .wrap .navigation ul li a{
+        font-size: 24px;
+    }
+
+    .full-menu .wrap .menu-text p{
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .full-menu .wrap .menu-text{
+        height: 100%;
+    }
+
+    .full-menu .wrap .menu-text article{
+        margin-top: 7vh;
+        margin-right: 7vw;
+        font-size: 24px;
+    }
+    .full-menu .wrap .menu-text p{
+        margin-top: 34vh;
+        margin-right: 7vw;
+        text-align: center;
+    }
+    #social article a{
+
+        font-size: small;
+    }
+    .social-items a i{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .full-menu .menu-text p{
+        display: none;
+    }
+    .img-section img{
+        height: 100%;
+    }
+    .full-menu .navegacion{
+        justify-content: center;
+        text-align: center;
+    }
+    iframe{
+        width:93.2vw ;
+    }
+    #social article a{
+
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .main{
+        height: 600px;
+    }
+    .img-section img{
+        height: 100%;
+    }
+    .caption-main h1{
+        font-size: 50px;
+    }
+
+    .caption-main .btn-view{
+        width: 180px;
+        padding: 10px 0px;
+        margin: 20px auto;
+
+        font-size: 18px;
+    }
+    iframe{
+        width:90.2vw ;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    .main{
+        height: 50px;
+    }
+
+    .caption-main h1{
+        font-size: 20px;
+    }
+
+
+    .full-menu .wrap .menu-text article{
+        margin-top: 7vh;
+        font-size: 32px;
+    }
+    .full-menu .wrap .menu-text i{
+        font-size: 32px;
+    }
+    .full-menu .wrap .menu-text p{
+        margin-top: 38vh;
+    }
+    footer{
+        width:100% ;
+    }
+    #social article a{
+
+        font-size: x-small;
+    }
+    .carousel {
+        width: 100%;
+        height: 45vh;
+    }
+    .carousel .carousel-item img{
+        left: 10vw;
+        height: 45vh;
+
+    }
+}
+
+
+/* */
+/* */
+/* */
+
+/*user agent*/
+/*https://fontawesome.com/*/
