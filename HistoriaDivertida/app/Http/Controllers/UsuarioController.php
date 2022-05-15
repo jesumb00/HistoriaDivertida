@@ -37,7 +37,7 @@ class UsuarioController extends Controller
         $remember=(request()->filled('input-remember'));
          $user=User::where('email',$request->email)->first();
          //return $user;
-         if($user->password===$request->password){
+         if($user->password===md5($request->password)){
              Auth::login($user);
              request()->session()->regenerate();
              return redirect()->intended('shop');
@@ -74,7 +74,7 @@ class UsuarioController extends Controller
         $usuario->name = $request->name;
         $usuario->surname = $request->surname;
         $usuario->email = $request->email;
-        $usuario->password = $request->password;
+        $usuario->password = md5($request->password);
         $usuario->save();
 
         return redirect()->route('/login/login');
@@ -102,7 +102,7 @@ class UsuarioController extends Controller
         $usuario->name = $request->name;
         $usuario->surname = $request->surname;
         $usuario->email = $request->email;
-        $usuario->password = $request->password;
+        $usuario->password = md5($request->password);
         $usuario->save();
 
         return redirect()->route('usuarios.index');
