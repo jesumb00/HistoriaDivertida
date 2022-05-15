@@ -13,7 +13,7 @@ use App\Http\Controllers\UsuarioController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::view('/prueba', \App\Models\User::first());
 Route::view('/', 'welcome');
 Route::view('/product', 'shop/product');
 Route::view('/visit', 'info/visit');

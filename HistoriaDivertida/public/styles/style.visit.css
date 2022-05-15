@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid black ;
     height: 6vh;
-    
+
 }
 
 header section {
@@ -53,7 +53,7 @@ header section h1{
     display: flex;
     align-items: center;
     height: 100%;
-    
+
 }
 #icon-section {
     display: flex;
@@ -108,7 +108,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 main h1{
     font-family: 'Macondo', cursive;
@@ -118,13 +118,13 @@ main section{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 4vh;
-    
+
 }
 
 #img-cab{
     justify-content:center ;
     align-items: center;
-    background-image: url('../img/cabecera.jpg') ; 
+    background-image: url('../img/visit/cabecera.jpg') ;
     background-repeat: no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,7 +134,7 @@ main section{
     width: 80%;
     height: 55vh;
     margin-left: 10vw;
-    
+
 }
 #img-cab h1{
     font-family: 'Macondo', cursive;
@@ -146,7 +146,7 @@ main section{
 }
 .decoration::after, h1::before{
     content: "";
-    
+
 }
 #block1{
     width: 45%;
@@ -224,14 +224,14 @@ main section article sub{
 #rules article h4{
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
+
 }
 #rules article i{
- 
+
     padding: 0.6em 0.2em 0.6em 0.2em;
     background-color: rgb(250, 243, 234);
     border-radius: 5em;
-    
+
 }
 #rules2{
     display: flex;
@@ -259,14 +259,14 @@ main section article sub{
 #rules2 article h4{
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
+
 }
 #rules2 article i{
-    
+
     padding: 0.6em 0.2em 0.6em 0.2em;
     background-color: rgb(250, 243, 234);
     border-radius: 5em;
-    
+
 }
 #recommendations{
     display: flex;
@@ -333,7 +333,7 @@ main section article sub{
     display: flex;
     flex-direction: column;
     margin-left: 23vw;
-    
+
 }
 .full-menu .wrap .navigation ul{
     list-style: none;
@@ -344,7 +344,7 @@ main section article sub{
 .full-menu .wrap .navigation ul li a{
     text-decoration: none;
     font-size: 30px;
-    color:#fff;   
+    color:#fff;
 }
 
 .full-menu .wrap .navigation ul li a:hover,
@@ -356,13 +356,13 @@ main section article sub{
     text-decoration: none;
     color:rgb(120, 141, 153);
     font-size: 30px;
-    margin: 50px 20px 0px 15px ;   
+    margin: 50px 20px 0px 15px ;
 }
 
 .full-menu .wrap .menu-text {
     flex-basis:0;
     flex-grow: 1;
-    
+
     font-size: 15px;
     color:aliceblue;
     font-weight: 300;
@@ -386,7 +386,7 @@ main section article sub{
     margin-right: 7vw;
 		font-size: 13px;
 		font-weight: 300;
-        
+
 }
 
 
@@ -427,7 +427,7 @@ main section article sub{
     }
 }
 @media screen and (max-width: 1220px){
-   
+
 }
 @media screen and (max-width: 1120px){
     #hours{
@@ -438,7 +438,7 @@ main section article sub{
     }
 }
 @media screen and (max-width: 1000px){
-    
+
 }
 @media screen and (max-width: 950px){
     #icon-section{
@@ -484,7 +484,7 @@ main section article sub{
     .full-menu .wrap .menu-text{
         height: 100%;
     }
-    
+
     .full-menu .wrap .menu-text article{
         margin-top: 7vh;
         margin-right: 7vw;
@@ -496,7 +496,7 @@ main section article sub{
         text-align: center;
     }
     #social article a{
-        
+
         font-size: small;
     }
     .social-items a i{
@@ -521,7 +521,7 @@ main section article sub{
     }
 }
 @media screen and (max-width: 680px){
-   
+
 }
 @media screen and (max-width: 630px){
    main section article{
@@ -545,11 +545,11 @@ main section article sub{
         width:93.2vw ;
     }
     #social article a{
-        
+
         font-size: small;
     }
-   
-    
+
+
 }
 @media screen and (max-width: 470px){
     #menu-front article a{
@@ -588,7 +588,7 @@ main section article sub{
     iframe{
         width:90.2vw ;
     }
-    
+
 
 }
 
@@ -600,8 +600,8 @@ main section article sub{
 	.caption-main h1{
 		font-size: 20px;
 	}
-    
-    
+
+
     .full-menu .wrap .menu-text article{
         margin-top: 7vh;
         font-size: 32px;
@@ -616,12 +616,12 @@ main section article sub{
         width:100% ;
     }
     #social article a{
-        
+
         font-size: x-small;
     }
-    
-    
+
+
 }
 @media screen and (max-width: 300px){
-    
+
 }

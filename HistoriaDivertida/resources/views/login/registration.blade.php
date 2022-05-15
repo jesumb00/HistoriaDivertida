@@ -25,6 +25,6 @@
 
     </form>
 </section>
-<script src="{{asset('javascript.login.js')}}"></script>
+<script src="{{asset('javaScript/javascript.login.js')}}"></script>
 </body>
 </html>
