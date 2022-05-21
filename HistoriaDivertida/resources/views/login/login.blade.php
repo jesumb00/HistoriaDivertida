@@ -12,16 +12,16 @@
            <img src="{{asset('img/movimiento/color1.png')}}" alt="1" id="image">
            <form action="/exist" method="POST" class="formulario">
                @csrf
-               <input name="email" id="input-user" type="text" required placeholder="Usuario" value="{{old('email')}}" autocomplete="off">
+               <input name="email" id="input-user" type="text" required autofocus placeholder="Usuario" value="{{old('email')}}" autocomplete="off">
                @error('email'){{$message}} @enderror
                <input name="password" id="input-password" required type="password" placeholder="************">
                @error('password'){{$message}} @enderror
                 <button type="submit">Login</button>
                <input type="checkbox" id="input-remember" class="checkbox" >
                <span id="remember">Remember me</span>
-               <a href="/create">Crear usuario</a>
+               <a href="/forget">Olvide mi contraseña</a>
             </form>
        </section>
-       <script src="{{asset('javascript.login.js')}}"></script>
+       <script src="{{asset('javaScript/javascript.login.js')}}"></script>
     </body>
 </html>

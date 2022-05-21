@@ -6,7 +6,9 @@ use App\Models\Usuario;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Nette\Schema\ValidationException;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Validation\ValidationException;
+
 
 class UsuarioController extends Controller
 {
@@ -17,39 +19,27 @@ class UsuarioController extends Controller
     }
 
     public function exist(Request $request){
-        /*$array=request()->validate([
-            'email'=>['required','email','string'],
-            'password'=>['required','string']
+        $this->validate($request, [
+            'email' => 'required',
+            'password' => 'required',
         ]);
-
-        $remember=(request()->filled('input-remember'));
-
-        if(Auth::attempt($array,$remember)){
-            request()->session()->regenerate();//regeneramos la sesion por el session fixation
-            return redirect()->intended('shop');//->with('status','Todo correcto');
-        }else{
-            return redirect('login');
-        }
-        throw ValidationException::withMessages([
-            'email'=>'El email no es correcto'
-
-        ]);*/
-        $remember=(request()->filled('input-remember'));
          $user=User::where('email',$request->email)->first();
-         //return $user;
-         if($user->password===md5($request->password)){
+
+         if($user!="" && $user->password===md5($request->password)){
              Auth::login($user);
              request()->session()->regenerate();
              return redirect()->intended('shop');
          }
-         else{
-             print $user->password;
-             print "<br>";
-             print md5($request->password);
-         }
+        throw ValidationException::withMessages([
+           'email' => 'Este email no es correcto',
+            'password' =>'Contraseña incorrecta'
+        ]);
+
 
 
     }
+
+
 
     public function closed(){
         Auth::logout();
@@ -77,7 +67,7 @@ class UsuarioController extends Controller
         $usuario->password = md5($request->password);
         $usuario->save();
 
-        return redirect()->route('/login/login');
+        return redirect()->route('/login');
     }
 
     public function show(Usuario $usuario) // Display the specified resource.

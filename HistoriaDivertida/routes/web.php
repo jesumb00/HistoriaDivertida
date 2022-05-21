@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
-
+use App\Http\Controllers\ForgotPasswordController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,16 +19,18 @@ Route::view('/product', 'shop/product');
 Route::view('/visit', 'info/visit');
 
 Route::view('/login', '/login/login')->middleware('guest');
-
+Route::view('/forget', '/login/forget')->middleware('guest');
 
 //Route::view('/shop.home','shop.home');
 
 Route::view('/home','home')->middleware('auth');
 
-Route::view('/shop','shop');
+Route::view('/shop','shop/welcome');
 
 Route::post('/exist',[UsuarioController::class, 'exist']);
-
+Route::post('/forgetPassword',[ForgotPasswordController::class, 'store']);
+Route::view('/restart', '/login/forget_password')->middleware('guest');
+Route::view('/confirmation', '/login/confirmation')->middleware('guest');
 //Route::resource('categorias', UsuarioController::class);
 
 Route::post('/closed',[UsuarioController::class, 'closed']);
